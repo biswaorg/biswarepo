@@ -33,16 +33,24 @@ public class CarController {
 		return "redirect:home";
 	}
 	
-	/*@RequestMapping(value = "/search")
-	public String search(Model model, @RequestParam String search) {
+	@RequestMapping(value = "/search")
+	public String searchWithAnyString(Model model, @RequestParam String search) {
 		model.addAttribute("carList", carSearchRepository.searchCars(search));
 		model.addAttribute("search", search);
 		return "home";
-	}*/
+	}
 	
-	@RequestMapping(value = "/searchMake")
-	public String search(Model model) {
-		model.addAttribute("carList", carSearchRepository.searchCarWithMake());
+	@RequestMapping(value = "/searchBrand")
+	public String search(Model model, @RequestParam String brand) {
+		model.addAttribute("carList", carSearchRepository.searchCarWithMake(brand));
+		model.addAttribute("brand", brand);
+		return "home";
+	}
+	
+	@RequestMapping(value = "/searchLessThanYear")
+	public String search(Model model, @RequestParam int year) {
+		model.addAttribute("carList", carSearchRepository.searchCarWithMake(year));
+		model.addAttribute("year", year);
 		return "home";
 	}
 	

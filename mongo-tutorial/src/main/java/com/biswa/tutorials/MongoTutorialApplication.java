@@ -13,6 +13,8 @@ public class MongoTutorialApplication {
 		SpringApplication.run(MongoTutorialApplication.class, args);
 	}
 	
+	// Changed
+	
 	public void run() {
 	}
 }
