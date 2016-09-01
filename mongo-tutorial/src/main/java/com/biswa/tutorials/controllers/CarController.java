@@ -24,6 +24,7 @@ public class CarController {
 	@RequestMapping("/home")
 	public String home(Model model) {
 		model.addAttribute("carList", carRepository.findAll());
+		// comment
 		return "home";
 	}
 	
