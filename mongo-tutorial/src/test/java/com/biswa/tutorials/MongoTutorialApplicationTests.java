@@ -1,4 +1,4 @@
-package net.uresk.tutorials;
+package com.biswa.tutorials;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
