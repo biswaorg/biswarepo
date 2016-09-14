@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.biswa.CucumberTest
--------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.551 sec - in com.biswa.CucumberTest
