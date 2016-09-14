@@ -1,0 +1,5 @@
+com\journaldev\spring\mongodb\model\Person.class
+com\journaldev\spring\mongodb\dao\PersonDAO.class
+com\journaldev\spring\mongodb\dao\PersonDAOImpl.class
+com\journaldev\spring\mongodb\main\SpringMongoDBXMLMain.class
+com\journaldev\spring\mongodb\main\SpringDataMongoDBMain.class
