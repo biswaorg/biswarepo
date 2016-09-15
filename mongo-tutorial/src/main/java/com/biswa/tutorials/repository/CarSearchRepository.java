@@ -25,7 +25,6 @@ public class CarSearchRepository {
 						), Car.class);
 	}
 	
-	
 	//Get all car name starting with Brand Name
 	public Collection<Car> searchCarWithMake(String brand){
 		return mongoTemplate.find(new Query(Criteria.where("make").is(brand)),Car.class);
